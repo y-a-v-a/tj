@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>Sites/tj/index.php</string>
+	<string>getline.php</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,43 +21,26 @@
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
-		<key>Sites/tj/getline.php</key>
+		<key>getline.php</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>17</integer>
-				<key>line</key>
-				<integer>1</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>Sites/tj/index.php</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>55</integer>
-				<key>line</key>
 				<integer>0</integer>
+				<key>line</key>
+				<integer>80</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>59</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>Sites/tj/getline.php</string>
-		<string>Sites/tj/index.php</string>
+		<string>getline.php</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
-	<false/>
-	<key>showFileHierarchyPanel</key>
 	<true/>
 	<key>treeState</key>
 	<dict>
@@ -78,6 +61,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{18, 10}, {1024, 768}}</string>
+	<string>{{204, 32}, {1067, 746}}</string>
 </dict>
 </plist>
