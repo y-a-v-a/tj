@@ -1,10 +1,14 @@
-<?php echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
+<?php
+header('Content-type: text/html; charset=utf-8');
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 	"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<title>TJ</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<script type="text/javascript" src="js/mootools.js"></script>
 	<script type="text/javascript" src="js/mootools-more.js"></script>
 	<script type="text/javascript">
