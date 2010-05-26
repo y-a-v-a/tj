@@ -4,6 +4,7 @@
  * @package Neuropolis N
  * @copyright 2010 vincent bruijn, ax710
  * @license creative commons - http://creativecommons.org/licenses/by/3.0/nl/
+ * @version 0.1 may 2010
  */
 error_reporting(0);
 sleep(2);
