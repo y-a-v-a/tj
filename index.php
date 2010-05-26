@@ -1,4 +1,10 @@
 <?php
+/**
+ * Neuropolis N by ax710 and vincentbruijn
+ * @package Neuropolis N
+ * @copyright 2010 vincent bruijn, ax710
+ * @license creative commons - http://creativecommons.org/licenses/by/3.0/nl/
+ */
 header('Content-type: text/html; charset=utf-8');
 echo '<?xml version="1.0" encoding="UTF-8"?>';
 ?>
@@ -7,7 +13,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-	<title>TJ</title>
+	<title>Neuropolis N</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<script type="text/javascript" src="js/mootools.js"></script>
 	<script type="text/javascript" src="js/mootools-more.js"></script>
@@ -33,9 +39,9 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 <div id="content" style="margin-bottom: 45px;">
 	
 </div>
-<div style="position: fixed; bottom: 0; padding: 4px; background: #fff;">
+<div style="position: fixed; bottom: 0; padding: 4px; background: #fff; width: 98%;">
 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/nl/"><img alt="Creative Commons License" style="border-width:0; float: left; clear: both; margin-right: 4px;" src="http://creativecommons.org/images/public/somerights20.png" /></a>
-<span class="color2" xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">TJ</span> van <a class="color1" xmlns:cc="http://creativecommons.org/ns#" href="http://www.ax710.org/" property="cc:attributionName" rel="cc:attributionURL">ax710 &amp; alweervincent</a> is in licentie gegeven volgens een <a class="color2" rel="license" href="http://creativecommons.org/licenses/by/3.0/nl/">Creative Commons Naamsvermelding 3.0 Nederland licentie</a>.<br />Gebaseerd op een script van <a class="color3" xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://www.vincentbruijn.nl/tj/" rel="dc:source">www.vincentbruijn.nl</a>.
+<span class="color2" xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">Neuropolis N</span> van <a class="color1" xmlns:cc="http://creativecommons.org/ns#" href="http://www.ax710.org/" property="cc:attributionName" rel="cc:attributionURL">ax710 &amp; alweervincent</a> is in licentie gegeven volgens een <a class="color2" rel="license" href="http://creativecommons.org/licenses/by/3.0/nl/">Creative Commons Naamsvermelding 3.0 Nederland licentie</a>.<br />Gebaseerd op een script van <a class="color3" xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://www.vincentbruijn.nl/neuropolisn/" rel="dc:source">www.vincentbruijn.nl</a>.
 </div>
 <script type="text/javascript">
 function getLine() {

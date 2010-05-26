@@ -1,4 +1,10 @@
 <?php
+/**
+ * Neuropolis N by ax710 and vincentbruijn
+ * @package Neuropolis N
+ * @copyright 2010 vincent bruijn, ax710
+ * @license creative commons - http://creativecommons.org/licenses/by/3.0/nl/
+ */
 error_reporting(0);
 sleep(2);
 if (!isset($_GET['sp'])) {
