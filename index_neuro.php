@@ -4,7 +4,7 @@
  * @package Neuropolis N
  * @copyright 2010 vincent bruijn, ax710
  * @license creative commons - http://creativecommons.org/licenses/by/3.0/nl/
- * @version 0.1 may 2010
+ * @version 0.2 may 2010
  */
 header('Content-type: text/html; charset=utf-8');
 echo '<?xml version="1.0" encoding="UTF-8"?>';

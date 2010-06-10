@@ -1,10 +1,10 @@
 <?php
 /**
- * Neuropolis N by ax710 and vincentbruijn
- * @package Neuropolis N
+ * God is a TJ N by ax710 and vincentbruijn
+ * @package God is a TJ
  * @copyright 2010 vincent bruijn, ax710
  * @license creative commons - http://creativecommons.org/licenses/by/3.0/nl/
- * @version 0.1 may 2010
+ * @version 0.2 may 2010
  */
 header('Content-type: text/html; charset=utf-8');
 echo '<?xml version="1.0" encoding="UTF-8"?>';
@@ -14,7 +14,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-	<title>Neuropolis N</title>
+	<title>God is a TJ</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<script type="text/javascript" src="js/mootools.js"></script>
 	<script type="text/javascript" src="js/mootools-more.js"></script>
