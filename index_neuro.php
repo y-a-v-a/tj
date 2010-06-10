@@ -44,7 +44,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/nl/">
 	<img alt="Creative Commons License" style="border-width:0; vertical-align: middle; clear: both; margin-right: 4px;" src="http://creativecommons.org/images/public/somerights20.png" />
 </a>
-<span class="color2" xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">God is a TJ</span>
+<span class="color2" xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">Neuropolis N</span>
  van <a class="color1" xmlns:cc="http://creativecommons.org/ns#" href="http://www.ax710.org/" property="cc:attributionName" rel="cc:attributionURL">ax710</a> &amp; 
 <a class="color3" xmlns:cc="http://creativecommons.org/ns#" href="http://www.alweervincent.nl/" property="cc:attributionName" rel="cc:attributionURL">alweervincent</a>
  is in licentie gegeven volgens een <a class="color2" rel="license" href="http://creativecommons.org/licenses/by/3.0/nl/">Creative Commons Naamsvermelding 3.0 Nederland licentie</a>.
@@ -53,7 +53,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 function getLine() {
 	var r = new Request({
 		method:'get',
-		url:"getbibleline.php?sp=" + window.sP,
+		url:"getline.php?sp=" + window.sP,
 		onSuccess: addResp
 	}).send();
 }
