@@ -1,0 +1,81 @@
+<?php
+/**
+ * Neuropolis N by ax710 and vincentbruijn
+ * @package Neuropolis N
+ * @copyright 2010 vincent bruijn, ax710
+ * @license creative commons - http://creativecommons.org/licenses/by/3.0/nl/
+ * @version 0.1 may 2010
+ * exmaple sources:
+ * http://www.gutenberg.org/dirs/etext05/web4310.txt
+ * 
+ */
+header("Content-Type: text/html; charset=UTF-8");
+error_reporting(0);
+
+if (!isset($_GET['sp'])) {
+	header('X-Exception: send correct get params');
+	echo 'No direct access';
+	exit;
+}
+$sp = (int) $_GET['sp'];
+$urls= array(
+	"ftp://eremita.di.uminho.pt/pub/gutenberg/etext05",
+	"http://www.gutenberg.org/dirs/etext05",
+	"http://www.gutenberg.lib.md.us/etext05",
+	"ftp://indian.cse.msu.edu/pub/mirrors/Gutenberg/etext05",
+	"http://gutenberg.mirrors.tds.net/pub/gutenberg.org/etext05",
+	"http://mirrors.xmission.com/gutenberg/etext05",
+	"ftp://sunsite.informatik.rwth-aachen.de/pub/mirror/ibiblio/gutenberg/etext05",
+	"ftp://cis.uniroma2.it/gutenberg/etext05"
+	);
+$url = $urls[rand(0,count($urls) - 1)];
+
+$req = '/';
+
+$book = rand(0,66);
+if ($book < 10) {
+	$book = '0' . $book;
+}
+
+$req .= 'web' . $book . '10.txt';
+
+header('X-Url: ' . $url . $req);
+
+$cnt = @file_get_contents($url . $req);
+
+if ($cnt == false) {
+	header('X-Exception: No artlinks');
+	echo 'axel';
+	die;
+}
+
+$cnt = strstr($cnt, '001:001');
+
+$cnt = strrev(strstr(strrev($cnt), strrev('*** END')));
+
+$cnt = substr($cnt, 0, strlen($cnt) - strlen('*** END'));
+
+
+switch ($sp) {
+	case '0':
+		preg_match_all("/[A-Z]{1}[a-z]*[ ]{1}([a-z0-9:\-,]*[ ]){4,12}/",$cnt, $matches);
+		break;
+	case '1':
+		preg_match_all("/[ ]{1}[a-z]{1}([A-Za-z\-,:]*[ ]){6,}/",$cnt, $matches);
+		break;
+	case '2':
+		preg_match_all("/([ ]+?[a-z][A-Za-z\-,:]*){6,13}([\.\?!]){1}/",$cnt, $matches,PREG_PATTERN_ORDER);
+		break;
+}
+
+//preg_match("/[A-Z]{1}[ ]/",$baseContent->nodeValue, $matches);
+// print_r($matches);
+// echo str_repeat('<br />', 4);
+// var_dump($baseContent->nodeValue);
+echo isset($matches[0]) && count($matches[0]) > 0 ? $matches[0][rand(0, count($matches[0]) - 1)] : 'axel';
+//echo isset($matches[0]) ? $matches[0] : 'axel';
+
+exit;
+
+
+
