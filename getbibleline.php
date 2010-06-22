@@ -6,7 +6,7 @@
  * @license creative commons - http://creativecommons.org/licenses/by/3.0/nl/
  * @version 0.2 may 2010
  * exmaple sources:
- * http://www.gutenberg.org/dirs/etext05/web4310.txt
+ * http://www.gutenberg.org/dirs/etext05/drb4310.txt
  */
 
 // set charset
@@ -35,12 +35,12 @@ $url = $urls[rand(0,count($urls) - 1)];
 $req = '/';
 
 // bible contains 67 books
-$book = rand(0,66);
+$book = rand(0,73);
 if ($book < 10) {
 	$book = '0' . $book;
 }
 
-$req .= 'web' . $book . '10.txt';
+$req .= 'drb' . $book . '10.txt';
 
 // for debugging
 header('X-Url: ' . $url . $req);
@@ -54,7 +54,7 @@ if ($cnt == false) {
 	die;
 }
 // strip meta-data to get main text
-$cnt = strstr($cnt, '001:001');
+$cnt = strstr($cnt, '1:1');
 // strip meta-data from end of file
 $cnt = strrev(strstr(strrev($cnt), strrev('*** END')));
 
