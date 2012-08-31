@@ -13,12 +13,12 @@
 header("Content-Type: text/html; charset=UTF-8");
 error_reporting(0);
 
-if (!isset($_GET['sp'])) {
+if (!isset($_POST['sp'])) {
 	header('X-Exception: send correct get params');
 	echo 'No direct access';
 	exit;
 }
-$sp = (int) $_GET['sp'];
+$sp = (int) $_POST['sp'];
 
 // mirrors to choose from
 $urls= array(
@@ -73,7 +73,14 @@ switch ($sp) {
 		break;
 }
 // return stuff
-echo isset($matches[0]) && count($matches[0]) > 0 ? $matches[0][rand(0, count($matches[0]) - 1)] : 'axel';
+//echo isset($matches[0]) && count($matches[0]) > 0 ? $matches[0][rand(0, count($matches[0]) - 1)] : 'axel';
+if (isset($matches[0]) && count($matches[0]) > 0) {
+	echo $matches[0][rand(0, count($matches[0]) - 1)];
+} else {
+	header('X-Exception: Match error');
+	echo 'axel';
+}
+
 exit;
 
 

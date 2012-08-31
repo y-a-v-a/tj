@@ -6,29 +6,29 @@
  * @license creative commons - http://creativecommons.org/licenses/by/3.0/nl/
  * @version 0.2 may 2010
  */
+session_start(); // to create a cookie so Varnish will not cache responses on ONI server
 header('Content-type: text/html; charset=utf-8');
-echo '<?xml version="1.0" encoding="UTF-8"?>';
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-	"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Neuropolis N</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<script type="text/javascript" src="js/mootools.js"></script>
-	<script type="text/javascript" src="js/mootools-more.js"></script>
-	<script type="text/javascript">
+	<meta name="viewport" content="width=device-width">
+	<script src="js/mootools.js"></script>
+	<script src="js/mootools-more.js"></script>
+	<script>
 		window.addEvent('load', function() {
 			$('content').addEvent('mycomplete', function() {
 				getLine();
 			});
-			$('content').fireEvent('mycomplete');
+			getLine();
 		});
 		window.cC = 0;
 		window.sP = 0;
 	</script>
-	<style type="text/css">
+	<style>
 	.color0 { color: rgb( 35,  31,  32); }
 	.color1 { color: rgb(236,   0, 140); }
 	.color2 { color: rgb(  0, 174, 239); }
@@ -49,19 +49,21 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 <a class="color3" xmlns:cc="http://creativecommons.org/ns#" href="http://www.alweervincent.nl/" property="cc:attributionName" rel="cc:attributionURL">alweervincent</a>
  is in licentie gegeven volgens een <a class="color2" rel="license" href="http://creativecommons.org/licenses/by/3.0/nl/">Creative Commons Naamsvermelding 3.0 Nederland licentie</a>.
 </div>
-<script type="text/javascript">
-function getLine() {
+<script>
+var getLine = function getLine() {
 	var r = new Request({
-		method:'get',
-		url:"getline.php?sp=" + window.sP,
-		onSuccess: addResp
+		method:'post',
+		data: "sp=" + window.sP,
+		url:"getline.php",
+		onSuccess: addResp,
+		onFailure: reportError
 	}).send();
 }
 
-function addResp(resp) {
-	d = $('content');
+var addResp = function addResp(resp) {
+	var d = $('content');
 	if (resp !== 'axel') {
-		el = new Element('span');
+		var el = new Element('span');
 		el.setProperty('class', 'color' + window.cC);
 		el.set('html', resp + ' ');
 		el.injectInside(d);
@@ -78,6 +80,10 @@ function addResp(resp) {
 		var myFx = new Fx.Scroll(window).toBottom();
 	}
 	d.fireEvent('mycomplete');
+}
+
+var reportError = function reportError() {
+	console.log('error occured');
 }
 </script>
 </body>

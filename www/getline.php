@@ -8,12 +8,12 @@
  */
 error_reporting(0);
 sleep(2);
-if (!isset($_GET['sp'])) {
+if (!isset($_POST['sp'])) {
 	header('X-Exception: send correct get params');
 	echo 'No direct access';
 	exit;
 }
-$sp = (int) $_GET['sp'];
+$sp = (int) $_POST['sp'];
 $url = "http://www.metropolism.com";
 $req = '/magazine/';
 
