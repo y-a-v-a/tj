@@ -1,10 +1,10 @@
 <?php
 /**
- * God is a TJ N by ax710 and vincentbruijn
+ * God is a TJ by ax710 and y-a-v-a.org
  * @package God is a TJ
- * @copyright 2010 vincent bruijn, ax710
+ * @copyright 2010 y-a-v-a.org, ax710
  * @license creative commons - http://creativecommons.org/licenses/by/3.0/nl/
- * @version 0.2 may 2010
+ * @version 0.3 feb 2014
  */
 session_start();
 header('Content-type: text/html; charset=utf-8');
@@ -13,7 +13,6 @@ header('Content-type: text/html; charset=utf-8');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>God is a TJ</title>
 	<meta name="viewport" content="width=device-width">
 	<script src="js/mootools.js"></script>
