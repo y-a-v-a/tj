@@ -58,7 +58,7 @@ class BibleLine {
             $line = trim($matches[0][$index]);
             if ($this->sp === 0) {
                 $line = ucfirst($line);
-            } else if ($this->sp === 2 && substr($line, -1) !== '.') {
+            } else if ($this->sp === 2 && !preg_match("/[\.\?\!]/", substr($line, -1))) {
                 $line .= '.';
             }
         	return $line . ' ';
