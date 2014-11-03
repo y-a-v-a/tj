@@ -20,9 +20,9 @@ class BibleLine {
     }
     
     public function getLine() {
-        $bookUrl = $this->getUrl();
         $i = 0;
         do {
+            $bookUrl = $this->getUrl();
             $raw = $this->getRawData($bookUrl);
             $i++;
             if ($i === 5) {
