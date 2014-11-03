@@ -21,7 +21,7 @@ if (!isset($_POST['sp'])) {
 $sp = (int) $_POST['sp'];
 
 // mirrors to choose from
-$urls= array(
+$urls = array(
 	"ftp://eremita.di.uminho.pt/pub/gutenberg/etext05",
 	"http://www.gutenberg.org/dirs/etext05",
 	"http://www.gutenberg.lib.md.us/etext05",
