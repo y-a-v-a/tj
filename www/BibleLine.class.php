@@ -93,7 +93,7 @@ class BibleLine {
                     $this->paragraphCount++;
                     if ($lineBreakCount === 2 && $this->paragraphCount >= $this->titleAfterNParagraphs) {
                         $newIndex = rand(0, count($matches[0]) - 1);
-                        $parts = explode(" ", trim(trim($matches[0][$index]), ",.?!:"));
+                        $parts = explode(" ", trim(preg_replace("/\,\.\?\!\:/", " ", $matches[0][$index])));
                         $title = implode(" ", array_slice($parts, 0, rand(3, min(6, count($parts)))));
                         $line .= ucfirst($title) . "\n";
                         $this->titleAfterNParagraphs = rand(5, 10);

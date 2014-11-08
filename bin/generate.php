@@ -1,6 +1,7 @@
 <?php
 error_reporting(0);
 require '../www/BibleLine.class.php';
+require './pdf.php';
 
 $sp = 0;
 $b = new BibleLine($sp);
@@ -22,11 +23,13 @@ while (str_word_count($text) < 50000) {
     $line = $b->getLine();
     if (preg_match('/\n\n/', $line)) {
         $line = strrev(strstr(strrev($line), "\n\n"));
-        @file_put_contents($fileName, $line, FILE_APPEND);
-        exit;
+        file_put_contents($fileName, $line, FILE_APPEND);
+        break;
     }
-    @file_put_contents($fileName, $line, FILE_APPEND);
+    file_put_contents($fileName, $line, FILE_APPEND);
     $b->changeSp(++$sp % 3);
 }
+
+createPDF($fileName);
 
 exit;
