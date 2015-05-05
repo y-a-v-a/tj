@@ -4,7 +4,7 @@
  * @package God is a TJ
  * @copyright 2010 y-a-v-a.org, ax710
  * @license creative commons - http://creativecommons.org/licenses/by/3.0/nl/
- * @version 0.3 feb 2014
+ * @version 0.4 may 2015
  */
 session_start();
 header('Content-type: text/html; charset=utf-8');
@@ -15,6 +15,8 @@ header('Content-type: text/html; charset=utf-8');
 	<meta charset="utf-8">
 	<title>God is a TJ</title>
 	<meta name="viewport" content="width=device-width">
+	<meta name="keywords" content="TJ, text jockey, god, ax710, y-a-v-a">
+	<meta name="description" content="God is a TJ">
 	<script src="js/mootools.js"></script>
 	<script src="js/mootools-more.js"></script>
 	<script>
@@ -45,7 +47,7 @@ header('Content-type: text/html; charset=utf-8');
 </a>
 <span class="color2" xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">God is a TJ</span>
  van <a class="color1" xmlns:cc="http://creativecommons.org/ns#" href="http://www.ax710.org/" property="cc:attributionName" rel="cc:attributionURL">ax710</a> &amp;
-<a class="color3" xmlns:cc="http://creativecommons.org/ns#" href="http://www.alweervincent.nl/" property="cc:attributionName" rel="cc:attributionURL">alweervincent</a>
+<a class="color3" xmlns:cc="http://creativecommons.org/ns#" href="http://www.y-a-v-a.org/" property="cc:attributionName" rel="cc:attributionURL">y-a-v-a</a>
  is in licentie gegeven volgens een <a class="color2" rel="license" href="http://creativecommons.org/licenses/by/3.0/nl/">Creative Commons Naamsvermelding 3.0 Nederland licentie</a>.
 </div>
 <script>
