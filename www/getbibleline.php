@@ -20,32 +20,7 @@ if (!isset($_POST['sp'])) {
 }
 $sp = (int) $_POST['sp'];
 
-// mirrors to choose from
-$urls = array(
-	"ftp://eremita.di.uminho.pt/pub/gutenberg/etext05",
-	"http://www.gutenberg.org/dirs/etext05",
-	"http://www.gutenberg.lib.md.us/etext05",
-	"ftp://indian.cse.msu.edu/pub/mirrors/Gutenberg/etext05",
-	"http://gutenberg.mirrors.tds.net/pub/gutenberg.org/etext05",
-	"http://mirrors.xmission.com/gutenberg/etext05",
-	"ftp://sunsite.informatik.rwth-aachen.de/pub/mirror/ibiblio/gutenberg/etext05",
-	"ftp://cis.uniroma2.it/gutenberg/etext05"
-	);
-$url = $urls[rand(0,count($urls) - 1)];
-$req = '/';
-
-// bible contains 67 books
-$book = rand(0,73);
-if ($book < 10) {
-	$book = '0' . $book;
-}
-
-$req .= 'drb' . $book . '10.txt';
-
-// for debugging
-header('X-Url: ' . $url . $req);
-
-$cnt = @file_get_contents($url . $req);
+$cnt = @file_get_contents("bible.txt");
 
 if ($cnt == false) {
 	// return wildcard
