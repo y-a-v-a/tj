@@ -38,14 +38,14 @@ header('Content-type: text/html; charset=utf-8');
 
 <body>
 <div id="content" style="margin-bottom: 45px;">
-	
+
 </div>
 <div style="position: fixed; bottom: 0; padding: 4px; background: #fff; width: 98%;">
 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/nl/">
 	<img alt="Creative Commons License" style="border-width:0; vertical-align: middle; clear: both; margin-right: 4px;" src="http://creativecommons.org/images/public/somerights20.png" />
 </a>
 <span class="color2" xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">Neuropolis N</span>
- van <a class="color1" xmlns:cc="http://creativecommons.org/ns#" href="http://www.ax710.org/" property="cc:attributionName" rel="cc:attributionURL">ax710</a> &amp; 
+ van <a class="color1" xmlns:cc="http://creativecommons.org/ns#" href="http://www.ax710.org/" property="cc:attributionName" rel="cc:attributionURL">ax710</a> &amp;
 <a class="color3" xmlns:cc="http://creativecommons.org/ns#" href="http://www.alweervincent.nl/" property="cc:attributionName" rel="cc:attributionURL">alweervincent</a>
  is in licentie gegeven volgens een <a class="color2" rel="license" href="http://creativecommons.org/licenses/by/3.0/nl/">Creative Commons Naamsvermelding 3.0 Nederland licentie</a>.
 </div>
@@ -85,6 +85,16 @@ var addResp = function addResp(resp) {
 var reportError = function reportError() {
 	console.log('error occured');
 }
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16179947-27', 'auto');
+  ga('send', 'pageview');
+
 </script>
 </body>
 </html>
