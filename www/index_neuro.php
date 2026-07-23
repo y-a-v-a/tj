@@ -16,6 +16,47 @@ header('Content-type: text/html; charset=utf-8');
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Neuropolis N</title>
 	<meta name="viewport" content="width=device-width">
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "VisualArtwork",
+		"name": "Neuropolis N",
+		"creator": [
+			{
+				"@type": "Person",
+				"name": "ax710",
+				"url": "https://www.ax710.org/"
+			},
+			{
+				"@type": "Person",
+				"name": "alweervincent",
+				"url": "https://www.alweervincent.nl/"
+			}
+		],
+		"dateCreated": "2010",
+		"genre": "Internet Art",
+		"artform": "Digital Art",
+		"artMedium": "Web Browser",
+		"about": "Found text recombined into an endless live mix",
+		"description": "A text jockey that endlessly samples a collection of collected texts, mixing them line by line into a never-ending stream of coloured text",
+		"keywords": [
+			"internet art",
+			"digital art",
+			"web art",
+			"generative art",
+			"text jockey",
+			"found text"
+		],
+		"url": "https://www.neuropolisn.com/",
+		"isAccessibleForFree": true,
+		"license": "https://creativecommons.org/licenses/by/3.0/nl/",
+		"inLanguage": "en",
+		"audience": {
+			"@type": "Audience",
+			"audienceType": "Digital Art Enthusiasts"
+		}
+	}
+	</script>
 	<script src="js/mootools.js"></script>
 	<script src="js/mootools-more.js"></script>
 	<script>

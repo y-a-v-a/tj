@@ -1,0 +1,26 @@
+# Neuropolis N
+
+## Description
+A text jockey (TJ) that endlessly samples a collection of collected texts line by
+line and mixes them into a never-ending stream of colour-cycling text in the
+browser. The concept was made up by ax710 somewhere in the 1990s; this web
+implementation was an idea by y-a-v-a.
+
+## Creators
+- ax710 (https://www.ax710.org/)
+- alweervincent (https://www.alweervincent.nl/) also known as Vincent Bruijn
+
+## Date
+2010
+
+## License
+Creative Commons Attribution 3.0 Netherlands
+https://creativecommons.org/licenses/by/3.0/nl/
+
+## Related
+"God is a TJ", the same text jockey sampling the King James Bible
+http://www.god-is-a-tj.com/
+
+## Attribution Required
+When referencing this work, please credit ax710 & alweervincent and include the
+Creative Commons license.

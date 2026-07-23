@@ -1,0 +1,30 @@
+# God is a TJ
+
+## Description
+A text jockey (TJ) that endlessly samples the King James Bible line by line and
+mixes it into a never-ending stream of colour-cycling text in the browser. The
+concept was made up by ax710 somewhere in the 1990s; this web implementation was
+an idea by y-a-v-a.
+
+## Creators
+- ax710 (https://www.ax710.org/)
+- y-a-v-a.org (https://www.y-a-v-a.org/) also known as Vincent Bruijn
+
+## Date
+2010
+
+## License
+Creative Commons Attribution 3.0 Netherlands
+https://creativecommons.org/licenses/by/3.0/nl/
+
+## Based On
+"The King James Bible", Project Gutenberg eBook #10
+https://www.gutenberg.org/ebooks/10
+
+## Related
+"Neuropolis N", the same text jockey sampling a collection of collected texts
+https://www.neuropolisn.com/
+
+## Attribution Required
+When referencing this work, please credit ax710 & y-a-v-a.org and include the
+Creative Commons license.
