@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
-require '../www/BibleLine.class.php';
-require './pdf.php';
+require __DIR__ . '/BibleLine.class.php';
+require __DIR__ . '/pdf.php';
 
 $sp = 0;
 $b = new BibleLine($sp);

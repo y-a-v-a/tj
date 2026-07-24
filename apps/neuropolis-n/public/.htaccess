@@ -1,0 +1,8 @@
+<ifModule mod_expires.c>
+    ExpiresActive Off
+</ifModule>
+<ifModule mod_headers.c>
+    <filesMatch "\.(x?html?|php)$">
+        Header set Cache-Control "public, must-revalidate"
+    </filesMatch>
+</ifModule>

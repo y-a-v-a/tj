@@ -1,1 +1,4 @@
 *.tmproj
+apps/neuropolis-n/public/cache/*.txt
+tools/nanogenmo/text*.txt
+tools/nanogenmo/text*.pdf
